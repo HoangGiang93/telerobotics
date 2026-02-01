@@ -64,14 +64,15 @@ This will start the Cloudflare tunnel using your token from the environment vari
 2. **Start the Multiverse Server**
 
 ```bash
-./run.sh
+cd tests/bin
+./multiverse_server_cpp
 ```
 
 3. **Start the server** (in two new terminals)
 
 ```bash
-cd tests/bin
-./multiverse_server_cpp
+cd server
+python ws_server.py
 ```
 
 ```bash
