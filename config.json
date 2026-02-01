@@ -1,0 +1,11 @@
+{
+  "ingress": [
+    {
+      "hostname": "ws.multiverse-framework.com",
+      "originRequest": {},
+      "service": "http://127.0.0.1:7575"
+    },
+    { "service": "http_status:404" }
+  ],
+  "warp-routing": { "enabled": false }
+}

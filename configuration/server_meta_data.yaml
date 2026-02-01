@@ -1,0 +1,4 @@
+world_name: world
+simulation_name: webrtc_server
+receive:
+  object1: ["position", "quaternion"]

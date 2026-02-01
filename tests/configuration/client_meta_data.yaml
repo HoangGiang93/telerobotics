@@ -1,0 +1,9 @@
+world_name: world
+simulation_name: webrtc_client
+server_host: tcp://127.0.0.1
+server_port: 7000
+client_port: 7300
+send:
+  right_hand_ref: ["position", "quaternion"]
+# receive:
+  left_hand_ref: ["position", "quaternion"]
