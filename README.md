@@ -33,7 +33,7 @@ This repository contains a telerobotics application with server and client compo
    - Click **Configure** and copy your tunnel token
    - Edit the `.env` file and replace `your_token_here` with your actual token:
      ```bash
-     CLOUDFLARE_TUNNEL_TOKEN=eyJhIjoiYour_Actual_Token_Here..."
+     CLOUDFLARE_TUNNEL_TOKEN=your_cloudflare_tunnel_token_here
      ```
 
 4. **Run the setup script**
