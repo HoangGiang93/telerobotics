@@ -61,11 +61,17 @@ source .env
 
 This will start the Cloudflare tunnel using your token from the environment variable.
 
-2. **Start the server** (in two new terminals)
+2. **Start the Multiverse Server**
 
 ```bash
-cd server
-./python ws_server.py
+./run.sh
+```
+
+3. **Start the server** (in two new terminals)
+
+```bash
+cd tests/bin
+./multiverse_server_cpp
 ```
 
 ```bash
@@ -73,11 +79,11 @@ cd server
 ./server
 ```
 
-3. **Start the client** (in other two new terminals)
+4. **Start the client** (in other two new terminals)
 
 ```bash
 cd client
-./python ws_client.py
+python ws_client.py
 ```
 
 ```bash
