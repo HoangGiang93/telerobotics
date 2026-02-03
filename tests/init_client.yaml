@@ -1,0 +1,4 @@
+joint1:
+  joint_angular_position: [0.5]
+joint2:
+  joint_angular_position: [-0.5]

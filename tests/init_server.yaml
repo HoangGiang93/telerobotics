@@ -1,0 +1,6 @@
+left_hand_ref:
+  position: [1.1, 2.2, 3.3]
+  quaternion: [1.0, 0.0, 0.0, 0.0]
+right_hand_ref:
+  position: [-1.1, -2.2, -3.3]
+  quaternion: [-1.0, 0.0, 0.0, 0.0]
