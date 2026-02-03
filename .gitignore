@@ -56,3 +56,4 @@ SDP/
 # Environment variables and sensitive files
 .env
 *.token
+tests/telerobotics

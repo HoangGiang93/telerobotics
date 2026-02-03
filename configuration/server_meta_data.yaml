@@ -1,7 +1,0 @@
-world_name: world
-simulation_name: webrtc_server
-server_host: tcp://127.0.0.1
-server_port: 7000
-client_port: 7200
-receive:
-  object1: ["position", "quaternion"]

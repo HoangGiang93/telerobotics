@@ -39,7 +39,7 @@ if __name__ == "__main__":
     parser.add_argument("--simulation_name", type=str, required=False, default="multiverse_initializer", help="Name of the simulation")
     parser.add_argument("--server_port", type=str, required=False, default="7000", help="Server port number")
     parser.add_argument("--port", type=str, required=False, default="3000", help="Client port number")
-    parser.add_argument("--data_path", type=str, required=False, default=f"{os.path.join(os.path.dirname(__file__), "data.yaml")}", help="Path to load the data")
+    parser.add_argument("--data_path", type=str, required=False, default=f"{os.path.join(os.path.dirname(__file__), 'data.yaml')}", help="Path to load the data")
 
     # Parse arguments
     args = parser.parse_args()

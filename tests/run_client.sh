@@ -2,6 +2,25 @@
 
 cd $(dirname "$0")
 
+# Check if 'python' is already available in the PATH
+if command -v python &> /dev/null; then
+    echo "Python is already active. Skipping environment setup."
+else
+    echo "Python not detected. Managing telerobotics environment..."
+
+    if [ ! -d "telerobotics" ]; then
+        echo "Environment folder not found. Creating it now..."
+        python3 -m venv telerobotics
+        . telerobotics/bin/activate
+        python -m pip install -U pip
+        # Use -f to ensure we find the requirements file relative to the script location
+        pip install -r ../requirements.txt
+    else
+        echo "Activating existing telerobotics environment..."
+        . telerobotics/bin/activate
+    fi
+fi
+
 SESSION="client"
 
 # Start new tmux session (detached)
