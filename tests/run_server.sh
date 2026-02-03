@@ -14,7 +14,7 @@ else
         . telerobotics/bin/activate
         python -m pip install -U pip
         # Use -f to ensure we find the requirements file relative to the script location
-        pip install -r ../requirements.txt
+        (cd .. && pip install -r requirements.txt)
     else
         echo "Activating existing telerobotics environment..."
         . telerobotics/bin/activate
