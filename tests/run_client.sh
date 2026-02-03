@@ -31,11 +31,11 @@ tmux send-keys -t $SESSION "bin/multiverse_server_cpp --transport zmq --bind tcp
 
 # Split window vertically for pane 1
 tmux split-window -v -t $SESSION
-tmux send-keys -t $SESSION "workon telerobotics && python init.py --server_port=7030 --port=7035 --data_path=init_client.yaml" C-m
+tmux send-keys -t $SESSION "python init.py --server_port=7030 --port=7035 --data_path=init_client.yaml" C-m
 
 # Split pane 1 horizontally for pane 2
 tmux split-window -h -t $SESSION:0.1
-tmux send-keys -t $SESSION "workon telerobotics && python ../client/ws_client.py germany" C-m
+tmux send-keys -t $SESSION "python ../client/ws_client.py germany" C-m
 
 # Split pane 0 horizontally for pane 3
 tmux split-window -h -t $SESSION:0.0
